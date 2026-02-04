@@ -84,10 +84,69 @@ html{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+
+    
+}
+
+.logo span:nth-child(1){
+    animation: logo-dingle 5s  .1s infinite;
+}
+
+.logo span:nth-child(2){
+    animation: logo-dingle 5s  .2s infinite;
+}
+
+.logo span:nth-child(3){
+    animation: logo-dingle 5s  .3s infinite;
+}
+
+.logo span:nth-child(4){
+    animation: logo-dingle 5s  .4s infinite;
+}
+
+.logo span:nth-child(5){
+    animation: logo-dingle 5s  .5s infinite;
+}
+
+.logo span:nth-child(6){
+    animation: logo-dingle 5s  .6s infinite;
+}
+
+.logo span:nth-child(7){
+    animation: logo-dingle 5s  .7s infinite;
 }
 
 .header-image{
     width: 35%;
 }
 
+
+@keyframes logo-dingle {
+
+    0%{
+        transform: translateY(0);
+    }
+
+    10%{
+        transform: translateY(0);
+    }
+
+    15%{
+        transform: translateY(-100%);
+    }
+
+    20%{
+        transform: translateY(0);
+    }
+
+    30%{
+        transform: translateY(0);
+    }
+    
+
+    100%{
+        transform: translateY(0);
+    }
+    
+}
  
