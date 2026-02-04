@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "vollkorn", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-color: #2d9e80;
+    --secondary-color: #eee;
+    --white-color:#fff;
+    --grey-color:#555;
+    --light-grey-color:#777;
+}
