@@ -29,7 +29,8 @@ html{
 .container {
     background-color: var(--secondary-color);
     margin: 2.5rem;
-    box-shadow: 0 1rem 3rem var(--grey-color)
+    box-shadow: 0 1rem 3rem var(--grey-color); 
+    overflow: hidden;
 }
 
 .header{
@@ -40,6 +41,7 @@ html{
     url(images/header-bg.jpg) center no-repeat;
     background-size: cover;
     position: relative;
+    perspective: 100rem;
 }
 
 .header-text{
@@ -118,6 +120,8 @@ html{
 
 .header-image{
     width: 35%;
+    animation: balloon 150s infinite;
+
 }
 
 
@@ -147,6 +151,40 @@ html{
     100%{
         transform: translateY(0);
     }
+
+
     
 }
- 
+
+
+@keyframes balloon {
+    
+    0%{
+        transform: translateZ(40rem);
+        opacity: 1;
+    }
+
+    40%{
+        transform: translateZ(-500rem) 
+        translateX(150rem);
+        opacity: .8;
+    }
+
+    70%{
+        transform: translateZ(-1500rem)
+        translateX(800rem);
+        opacity: .6;
+    }
+
+    80%{
+        transform: translateZ(-50rem)
+        translateX(100rem);
+        opacity: .8;
+    }
+
+    0%{
+        transform: translateZ(40rem);
+        opacity: 1;
+    }
+}
+    
