@@ -19,3 +19,9 @@ html{
     --grey-color:#555;
     --light-grey-color:#777;
 }
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
