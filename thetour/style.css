@@ -190,6 +190,7 @@ html{
 
 /* Start Popular tour section */
 section.popular-tour{
+    padding-bottom: 10rem;
     
 }
 h1.popular-tour-heading{
@@ -197,7 +198,7 @@ h1.popular-tour-heading{
     text-align: center;
     color: var(--primary-color);
     text-transform: capitalize;
-    margin: 5rem 0 10rem 0;
+    margin: 5rem 0;
     
 }
 
@@ -208,12 +209,15 @@ h1.popular-tour-heading{
 }
 
 .card{
-    width: 35rem;
+    width: 30rem;
     position: relative;
+    border-radius: .5rem;
+    perspective: 150rem;
 }
 
 .card-image{
     width: 100%;
+    border-radius: .5rem .5rem 0 0;
 }
 
 .front-side{
@@ -221,6 +225,16 @@ h1.popular-tour-heading{
     background-color: var(--white-color);
     position: relative;
     z-index: 10;
+    height: 100%;
+    opacity: .9;
+    transition: opacity .5s, transform .5s, box-shadow .5s;
+}
+
+.change > .front-side{
+    transform: translateZ(-5rem) translateX(3rem);
+    box-shadow: 0 2rem 4rem #777;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .tour-name{
@@ -244,9 +258,9 @@ h1.popular-tour-heading{
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--light-grey-color);
-    margin: 2rem 0;
+    margin: 1rem 0;
     border-bottom: 0.1rem solid var(--primary-color);
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .back-side{
@@ -256,14 +270,26 @@ h1.popular-tour-heading{
     height: 100%;
     background-color: var(--primary-color);
     box-shadow: 0 2rem 4rem #777;
+    border-radius: .5rem;
     flex-direction: column;
+    transform: translateZ(-5rem) translateX(3rem);
+    opacity: .5;
+    transition: all .5s;
 }
+
+.change > .back-side{
+    transform: translateZ(0) translateX(0);
+    box-shadow: 0 .5rem 2rem #aaa;
+    opacity: 0.9;
+
+}
+
 
 .tour-price{
     font-size: 3rem;
     font-weight: 500;
     color: var(--white-color);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .card-button{
