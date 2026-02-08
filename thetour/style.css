@@ -520,4 +520,40 @@ h1.popular-tour-heading{
     }
 }
 /* End Contact */
+
+/* Footer */
+.footer{
+    background-color: var(--grey-color);
+    padding: 4rem 0 2rem 0;
+
+}
+
+.footer-list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link{
+    font-size: 1.8rem;
+    color: var(--white-color);
+    background-color: var(--grey-color);
+    margin: 0 1.8rem;
+    padding: .3rem 3rem;
+    letter-spacing: .3rem;
+    transform: all .3s;
+}
+
+.footer-link:hover{
+    transform: rotate(-10deg);
+    box-shadow: 0 2rem 3rem #000;
+}
+
+.footer-paragraph{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 5rem;
+
+}
+/* End Footer */
     
